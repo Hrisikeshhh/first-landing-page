@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin: 0% 7%;
+    height: 60px;
+    border-bottom:2px solid #cbc6c6;;
+}
+.leftNav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.leftNav span{
+    color: chocolate;
+    font-size: 171%;
+}
+.rightNav{
+    display: flex;
+    align-items: center;
+    
+    width: 60%;
+    height: 100%;
+
+}
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+}
+.navItems li{
+    list-style: none;
+    width: 100%;
+}
+.navBtn{
+    font-size: 87%;
+    padding: 1% 3%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+.navBtn:active{
+    font-size: 95%;
+    padding: 1% 3%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    color: white;
+}
+.navBtn:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+.navItems li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navItems li a:active{
+    color: rgb(123, 122, 122);
+}
+
+.navItems li a:hover{
+  color: rgb(123, 122, 122);
+  cursor: pointer;
+  font-size: larger;
+}
+
+.firstSec{
+    height: 80vh;
+     margin: 0% 7%;
+     display: flex;
+     border-bottom: 1px solid #cbc6c6;
+}
+.left{
+    width: 50%;
+    height: 100%;
+}
+.right{
+    width: 50%;
+    height: 100%;
+}
+.para{
+    height: 50%;
+}
+.para h1{
+    margin: 29% 1%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 330%;
+}
+.para p{
+    font-size: 161%;
+    width: 100%;
+    text-align: center;
+}
+.girl{
+    width: 95%;
+}
+.girl img{
+    width:100%;
+}
+.footerBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    
+}
