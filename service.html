@@ -14,11 +14,13 @@
         </div>
         <div class="rightNav">
             <ul class="navItems">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Contact us</a></li>
+                  <i class="fa-solid fa-xmark" id="close"></i>
+                <li class="items"><a href="index.html">Home</a></li>
+                <li class="items"><a href="about.html">About</a></li>
+                <li class="items"><a href="#">Contact us</a></li>
             </ul>
-            <button class="navBtn">join Now</button>
+             <button class="navBtn">join Now</button>
+             <i class="fa-solid fa-bars" id="menu"></i>
         </div>
      </nav>
 
@@ -48,7 +50,6 @@
               </div>
 
            </div>
-           <button class="joinUs">Join us</button>
      </section>
      
       <footer>
@@ -56,5 +57,30 @@
           <p>copyright <i class="fa-regular fa-copyright"></i> HrisikeshFitness.com| All rights reserved</p>
         </div>
      </footer>
+
+
+
+     
+      <script>
+      let menu = document.querySelector("#menu");
+      console.log(menu);
+      let ul = document.querySelector(".navItems");
+      console.log(ul);
+      let cross = document.querySelector("#close");
+    
+      if(menu)
+     {
+      menu.addEventListener("click",()=>{
+         ul.classList.add("slider");
+      })
+     }
+
+      if(cross)
+     {
+   cross.addEventListener("click",()=>{
+         ul.classList.remove("slider");
+      })
+     }
+     </script>
 </body>
 </html>

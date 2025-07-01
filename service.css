@@ -38,7 +38,7 @@ nav{
     justify-content: space-evenly;
     width: 75%;
 }
-.navItems li{
+.items{
     list-style: none;
     width: 100%;
     
@@ -142,4 +142,100 @@ width: 65%;
     justify-content: center;
     height: 50px;
     
+}
+
+
+
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+@media(max-width:750px)
+{
+
+.rightNav{
+    display: flex;
+    justify-content: flex-end;
+}
+#menu{
+    display:block;
+    margin:0% 5%;
+}
+
+.navItems{
+    background-color: rgb(251, 235, 206);
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    position: fixed;
+    top:0;
+    width: 50vw;
+    right:-50vw ;
+    transition: 0.3s ease;
+}
+
+.slider{
+    right:0;
+}
+
+.navBtn{
+    width: 48%;
+    font-size: 87%;
+    padding: 1% 3%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+
+#close{
+    display: inline-block;
+    margin: 1% -7%;
+    margin-left: -86%;
+    margin-top: -62%;
+   font-size: 189%;
+}
+
+.items{
+    margin: -26% -3%;
+    border-bottom: 1px solid #979494;
+}
+
+.firstSec{
+  height: 230vh;
+}
+.firstSec h1{
+  font-size: 291%;
+}
+.outerBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 29%;
+}
+
+.innerBox{
+    width: 100%;
+}
+
+.footerBar{
+    font-size: 73%;
+}
+
+}
+
+@media(min-width:414px) and (max-width:524px)
+{
+   .firstSec{
+    height: 275vh
+}
+}
+
+@media(min-width:525px) and (max-width:750px)
+{
+    .firstSec{
+    height: 343vh;
+    }
 }
